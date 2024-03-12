@@ -28,10 +28,11 @@ Create the following repositories on your Artifactory instance:
 
 1. A remote npm repository. Make sure the repository has *https://registry.npmjs.org* configured as its URL (this is the default when creating the repository).
 2. A local npm repository.
+![img.png](img.png)
 3. A virtual repository:
    - Include the remote and local repositories as part of the new virtual repository.
    - Set the new local repository as the **Default Deployment Repository** of the new virtual repository.
-
+![img_1.png](img_1.png)
 # Running the Example
 
 'cd' to the root project directory.
