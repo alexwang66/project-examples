@@ -13,7 +13,7 @@ Make sure you are using jdk 1.8
 
 ## Set up settings.xml
 ![img_1.png](img_1.png)
-copy the pom.xml int ~/.m2/settings.xml
+copy the settings.xml int ~/.m2/settings.xml
 
 ## Maven package
 ```dtd
@@ -21,3 +21,19 @@ cd project-examples/maven-examples/maven-example
 mvn package
 ```
 ## Maven deploy
+![img.png](img.png)
+
+Go to Deploy tab and copy the code snippet, paste into the bottom part of the file
+```
+/project-examples/maven-examples/maven-example/pom.xml
+```
+![img_2.png](img_2.png)
+
+Run maven deploy
+```dtd
+mvn deploy
+```
+![img_3.png](img_3.png)
+You can see the package is download and upload into Artifactory server.
+
+# Docker demo

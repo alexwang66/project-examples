@@ -70,7 +70,6 @@
             </plugin>
         </plugins>
     </build>
-
 <distributionManagement>
     <repository>
         <id>central</id>

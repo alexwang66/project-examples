@@ -32,23 +32,32 @@ jf --version
 # Configure your JFrog Platform connection details
 jf c add --url=<JFROG_PLATFORM_URL> [credentials flags]
 
+jf c use soleng
 # Configure Docker image name
-# Example: acme.jfrog.io/docker-local/hello-frog:1.0.0
+# Example: export DOCKER_IMAGE_NAME=soleng.jfrog.io/alexwang-docker/hello-jfrog:1.0.0
 export DOCKER_IMAGE_NAME=$DOCKER_REG_URL/$TARGET_REPO/hello-frog:1.0.0
-
-# Configure build name and build number
-export JFROG_CLI_BUILD_NAME=myBuild
-export JFROG_CLI_BUILD_NUMBER=1
 
 # Build Docker image
 docker build -t $DOCKER_IMAGE_NAME .
 
 # Scan Docker image for vulnerabilities
 jf docker scan $DOCKER_IMAGE_NAME
-
+![img.png](img.png)
 # Push image to Artifactory
 jf docker push $DOCKER_IMAGE_NAME
+![img_1.png](img_1.png)
+# Configure build name and build number
+export JFROG_CLI_BUILD_NAME=myBuild
+export JFROG_CLI_BUILD_NUMBER=1
 
 # Publish build info
 jf rt build-publish
 ```
+
+# Index build in Xray
+![img_2.png](img_2.png)
+
+# Scan build 
+jf bs myBuild 1  
+View result in xray scan list page
+![img_3.png](img_3.png)
