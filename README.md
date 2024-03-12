@@ -37,3 +37,4 @@ mvn deploy
 You can see the package is download and upload into Artifactory server.
 
 # Docker demo
+[Docker demo](https://github.com/alexwang66/project-examples/blob/master/docker-oci-examples/docker-example/README.md)
