@@ -41,11 +41,17 @@ export DOCKER_IMAGE_NAME=$DOCKER_REG_URL/$TARGET_REPO/hello-frog:1.0.0
 docker build -t $DOCKER_IMAGE_NAME .
 
 # Scan Docker image for vulnerabilities
+
 jf docker scan $DOCKER_IMAGE_NAME
+```
 ![img.png](img.png)
 # Push image to Artifactory
+```
 jf docker push $DOCKER_IMAGE_NAME
+```
 ![img_1.png](img_1.png)
+
+```
 # Configure build name and build number
 export JFROG_CLI_BUILD_NAME=myBuild
 export JFROG_CLI_BUILD_NUMBER=1
