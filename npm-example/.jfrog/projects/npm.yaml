@@ -1,0 +1,8 @@
+version: 1
+type: npm
+resolver:
+    repo: alex-npm-virtual
+    serverId: soleng
+deployer:
+    repo: alex-npm-virtual
+    serverId: soleng

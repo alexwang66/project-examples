@@ -5,6 +5,7 @@
     "start": "node helloworld"
   },
   "dependencies": {
+    "npm-example": "^0.0.1",
     "send": "^0.16.2"
   },
   "devDependencies": {

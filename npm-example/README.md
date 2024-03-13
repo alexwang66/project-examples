@@ -33,16 +33,24 @@ Create the following repositories on your Artifactory instance:
    - Include the remote and local repositories as part of the new virtual repository.
    - Set the new local repository as the **Default Deployment Repository** of the new virtual repository.
 ![img_1.png](img_1.png)
+
+4. The repository structure:
+![img_2.png](img_2.png)
 # Running the Example
 
 'cd' to the root project directory.
 
 Configure Artifactory:
 
-```
-jf c add --url=<JFROG_PLATFORM_URL> [credentials flags]
-```
+Configure your JFrog Platform connection details
+```dtd
+jf c add artifactory --basic-auth-only --url "http://myArtifactoryURL:8082" --user alex --password "AKCp8m........." --interactive=false
 
+```
+config jf to use the config name
+```dtd
+jf c use artifactory
+```
 Configure the npm project and select the virtual repository as the resolution and deployment repository:
 
 ```
