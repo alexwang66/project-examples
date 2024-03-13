@@ -36,3 +36,11 @@ mvn deploy
 ![img_3.png](img_3.png)
 You can see the package is download and upload into Artifactory server.
 
+# Index repository in Xray 
+![img_4.png](img_4.png)
+
+# Enable JAS scanning
+![img_5.png](img_5.png)
+
+# Check scan result in scan list
+![img_6.png](img_6.png)

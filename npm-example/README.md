@@ -49,7 +49,7 @@ jf c add artifactory --basic-auth-only --url "http://myArtifactoryURL:8082" --us
 ```
 config jf to use the config name
 ```dtd
-jf c use artifactory
+jf c use artifact
 ```
 Configure the npm project and select the virtual repository as the resolution and deployment repository:
 
