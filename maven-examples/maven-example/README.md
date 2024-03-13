@@ -13,7 +13,7 @@ Make sure you are using jdk 1.8
 
 ## Set up settings.xml
 ![img_1.png](img_1.png)
-copy the settings.xml int ~/.m2/settings.xml
+copy the settings.xml file into ~/.m2/settings.xml
 
 ## Maven package
 ```dtd

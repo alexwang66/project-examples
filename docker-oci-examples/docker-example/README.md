@@ -30,11 +30,11 @@ jf --version
 
 ```sh
 # Configure your JFrog Platform connection details
-jf c add --url=<JFROG_PLATFORM_URL> [credentials flags]
-
-jf c use soleng
+jf c add artifactory --basic-auth-only --url "http://myArtifactoryURL:8082" --user alex --password "AKCp8m........." --interactive=false
+# config jf to use the config name
+jf c use artifactory
 # Configure Docker image name
-# Example: export DOCKER_IMAGE_NAME=soleng.jfrog.io/alexwang-docker/hello-jfrog:1.0.0
+# Example: export DOCKER_IMAGE_NAME=acme.jfrog.io/alexwang-docker/hello-jfrog:1.0.0
 export DOCKER_IMAGE_NAME=$DOCKER_REG_URL/$TARGET_REPO/hello-frog:1.0.0
 
 # Build Docker image
