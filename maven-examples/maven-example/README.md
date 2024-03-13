@@ -44,3 +44,27 @@ You can see the package is download and upload into Artifactory server.
 
 # Check scan result in scan list
 ![img_6.png](img_6.png)
+
+# Adding vulnerable dependency log4j in pom file: project-examples/maven-examples/maven-example/pom.xml
+```dtd
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.9.1</version>
+        </dependency>
+```
+
+# Repackage and scan, view the JAS results:
+![img_7.png](img_7.png)
+
+# Upgrade the dependency version to do the security fix.
+```dtd
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.20.0</version>
+		</dependency>
+```
+
+# Verify the log4j issue was fix
+![img_8.png](img_8.png)
