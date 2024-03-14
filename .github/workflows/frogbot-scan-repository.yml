@@ -15,7 +15,6 @@ jobs:
       - uses: jfrog/frogbot@v2
         env:
           # [Mandatory]
-          # JFrog platform URL
           JF_URL: ${{ secrets.JF_URL }}
 
           # [Mandatory if JF_USER and JF_PASSWORD are not provided]
